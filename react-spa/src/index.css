@@ -1,0 +1,146 @@
+:root{
+  --g_color1: #35434c;
+  --g_color2: #2c3941;
+  --g_color3: #252e35;
+  --g_color4: #2c2c2c;
+  --g_color5: #f97252;
+}
+
+.btn{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn1 {background-color: #4CAF50;} /* Green */
+.btn2 {background-color: #008CBA;} /* Blue */
+.btn3 {background-color: #f44336;} /* Red */
+.btn4 {background-color: #e7e7e7; color: black;} /* Gray */
+.btn5 {background-color: #555555;} /* Black */
+
+.btn_size1 {font-size: 10px;}
+.btn_size2 {font-size: 12px;}
+.btn_size3 {font-size: 16px;}
+.btn_size4 {font-size: 20px;}
+.btn_size5 {font-size: 24px;}
+
+.mt-10{margin-top: 10px;}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--g_color5);
+}
+
+header .devices_box{
+  background: #fff;
+  color:var(--g_color4);
+  text-align: center;
+  font-size: 25px;
+  font-size: 43px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+header .devices_box .device{
+  padding: 0 5px;
+  width: 60px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--g_color1);
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-left: 2px solid var(--g_color5);
+  box-shadow: 0 0 5px #000;
+}
+
+.sidebar a {
+  padding: 15px 8px 15px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  background: var(--g_color2);
+  border-bottom: 1px solid #313e46;
+  width: 250px;
+}
+
+.sidebar a small{
+  font-size: 13px;
+  color: #ccc;
+}
+
+.sidebar a:hover {
+  color: #ccc;
+}
+
+.sidebar .closebtn {
+  font-size: 45px;
+  width: 100%;
+  background: var(--g_color3);
+  line-height: 19px;
+  padding: 15px;
+  color: white;
+}
+
+.title_page{
+  background: var(--g_color4);
+  color: #fff;
+  padding: 5px 15px;
+}
+.title_page h1{
+  margin: 0;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 11px 15px;
+  border: none;
+  position: absolute;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#content{
+  padding: 0 25px;
+}
+.content_text{
+  background: white;
+  padding: 15px;
+}
+
+@media (min-width: 1200px) {
+  header .devices_box .device:nth-child(3){background: #ebebeb;}
+}
+@media (max-width: 1199px) {
+  header .devices_box .device:nth-child(2){background: #ebebeb;}
+  header .devices_box .device:nth-child(3){background: none;}
+}
+@media (max-width: 450px) {
+  header .devices_box .device:nth-child(1){background: #ebebeb;}
+  header .devices_box .device:nth-child(2){background: none;}
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
